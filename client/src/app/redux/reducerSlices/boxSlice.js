@@ -11,7 +11,13 @@ const boxSlice = createSlice({
   initialState: initialState,
   reducers: {
     changeHeight(state) {
-      state.height=state.height+1
+      state.height=state.height+5
+    },
+    changeWidth(state) {
+      state.width=state.width+5
+    },
+     changeShape(state) {
+      state.height=state.height+5
     },
   },
 })
