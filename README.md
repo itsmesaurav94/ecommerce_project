@@ -20,10 +20,11 @@ If it's for the Flutterando version of the template just send a message to us (o
 <div align="center">
   <a href="/client/public/logo.png">
     <img src="/client/public/logo.png"> alt="Logo" width="80" style=" padding-right: 30px;">
+  </a>
 
   <br />
   <p align="center">
-    A Flutterando style README template for the community's projects and packages. It is open and free to use in your projects too! 
+    Simple Bazaar : Brand New best ecommerce website!!!! 
     <br>
     <br>
     <a href="https://github.com/Flutterando/README-Template/blob/master/EXAMPLE_README.md">View Example</a>
