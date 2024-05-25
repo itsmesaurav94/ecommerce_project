@@ -19,7 +19,7 @@ If it's for the Flutterando version of the template just send a message to us (o
 <br />
 <div align="center">
   <a href="/client/public/logo.png">
-    <img src="/client/public/logo.png"> alt="Logo" width="80" style=" padding-right: 30px;">
+    <img src="/client/public/logo.png">
   </a>
 
   <br />
