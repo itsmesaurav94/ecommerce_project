@@ -19,11 +19,7 @@ If it's for the Flutterando version of the template just send a message to us (o
 <br />
 <div align="center">
   <a href="/client/public/logo.png">
-    <img src="https://raw.githubusercontent.com/Flutterando/README-Template/master/readme_assets/readme_example_assets/logo-original.png" alt="Logo" width="80" style=" padding-right: 30px;">
-  </a>
-  <a href="https://github.com/Flutterando/README-Template/">
-    <img src="https://raw.githubusercontent.com/Flutterando/README-Template/master/readme_assets/logo-flutterando.png" alt="Logo" width="95">
-  </a>
+    <img src="/client/public/logo.png"> alt="Logo" width="80" style=" padding-right: 30px;">
 
   <br />
   <p align="center">
