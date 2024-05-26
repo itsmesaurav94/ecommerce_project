@@ -5,7 +5,8 @@ const initialState = {
     right: 0,
     width: 50,
     height: 50,
-    borderRadius: '0%'
+    borderRadius: '0%',
+    top: 0
 }
 
 const boxSlice = createSlice({
@@ -39,9 +40,11 @@ const boxSlice = createSlice({
       state.backgroundColor = actions.payload
     },
     shiftPosition(state,actions) {
+      state.top = 0
       state.right = actions.payload
     },
     shiftPositionTop(state,actions) {
+      state.right= 0
       state.top = actions.payload
     },
   },
