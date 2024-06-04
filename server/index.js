@@ -33,7 +33,6 @@ const port = process.env.PORT
 
 
 app.post('/register', (req, res) => {
-  console.log(req.body)
    User.create(req.body)
   res.send('ok')
 })
