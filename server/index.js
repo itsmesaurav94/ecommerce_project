@@ -42,9 +42,9 @@ app.post('/register', async (req, res) => {
   const emailExist  = await User.exists({email: req.body.email})
 
   if(phoneExist ){
-   return res.json({msg: "Phone Number is taken!"})
+   return res.status(409).json({msg: "Phone Number is taken!"})
   }else if(emailExist){
-    return res.json({msg: "Email is taken!"})
+    return res.status(409).json({msg: "Email is taken!"})
   }
   await User.create(req.body)
   return res.json({msg: "User registered"})
@@ -61,10 +61,10 @@ app.post('/login',async(req,res)=>{
       const token = jwt.sign({ phoneNumber: req.body.phoneNumber }, process.env.SECRET_KEY);
       res.json({msg: "Authorized", token})
     }else{
-      res.json({msg: "Invalid Password"})
+      res.status(401).json({msg: "Invalid Password"})
     }
   }else{
-    res.json({msg: "Phone Number not registered"})
+    res.status(401).json({msg: "Phone Number not registered"})
   }
   //
 
