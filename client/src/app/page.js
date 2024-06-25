@@ -4,8 +4,11 @@ import {Tabs, Tab, Input, Link, Button, Card, CardBody, CardHeader} from "@nextu
 import { useFormik } from 'formik';
 import Image from "next/image";
 import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
+
 
 export default function Main() {
+  const router = useRouter()
   const [selected, setSelected] = React.useState("login");
   const formik = useFormik({
     initialValues: {
@@ -61,7 +64,7 @@ export default function Main() {
   const data = await response.json()
   if(response.statusText == 'OK'){
     toast.success(data.msg)
-
+    router.push('/dashboard')
   }else{
     toast.error(data.msg)
   }
